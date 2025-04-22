@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Saurav Ghimire | Portfolio</title>
   <link rel="stylesheet" href="css/style.css"/>
@@ -13,31 +13,72 @@
 <body>
   <header>
     <div class="container">
+      <button id="darkToggle" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
       <img src="assets/profile.jpg" alt="Saurav Ghimire" class="profile-pic"/>
       <h1>Saurav Ghimire</h1>
-      <p>Computer Science Graduate | Aspiring PhD Researcher</p>
+      <p>Graduate Researcher • Machine Learning • Molecular Simulations</p>
       <p>Baton Rouge, LA 🇺🇸 | Kathmandu, Nepal 🇳🇵</p>
       <div class="socials">
         <a href="https://github.com/SauravGhm" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-        <a href="https://linkedin.com/in/sauravghm" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://linkedin.com/in/saurav-ghimire-4b7169199" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
         <a href="mailto:sauravvgh@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+        <a href="assets/resume.pdf" download><i class="fas fa-file-download fa-2x" title="Download Resume"></i></a>
       </div>
     </div>
   </header>
 
-  <section class="about container">
+  <nav class="navbar container">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+  </nav>
+
+  <section id="about" class="about container">
     <h2>About Me</h2>
     <p>
-      Hello! I'm Saurav Ghimire, a Computer Science graduate from Louisiana State University with a passion for deep learning, molecular simulations, and software development. I love bridging AI with real-world applications and aspire to pursue research that makes an impact.
+      I'm Saurav Ghimire, a Computer Science graduate student at Louisiana State University with a 4.0 GPA.
+      My research focuses on applying deep learning to molecular dynamics simulations to develop interatomic potentials and accelerate scientific discovery.
+      I’m passionate about combining computational intelligence with large-scale simulation systems and aspire to pursue a PhD in this field.
     </p>
   </section>
 
-  <section class="projects container">
+  <section id="research" class="projects container">
+    <h2>Research Experience</h2>
+    <ul>
+      <li>
+        <strong>Graduate Research Assistant – LSU</strong> (2023–2025)<br/>
+        Developed deep learning models for interatomic potentials. Used LAMMPS, HPC systems, and Python to run simulations and analyze structural/dynamic accuracy.
+      </li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects container">
     <h2>Projects</h2>
     <ul>
-      <li><strong>Vision-Language Attention Explorer</strong> — Visual QA using attention maps from deep models</li>
-      <li><strong>Diabetes Prediction API</strong> — Flask API for real-time ML predictions</li>
-      <li><strong>KRAWN</strong> — A clean personal portfolio website (this one!)</li>
+      <li>
+        <strong>Vision-Language Attention Explorer</strong><br/>
+        Visual QA using cross-modal attention maps (PyTorch, Transformers, GradCAM).
+      </li>
+      <li>
+        <strong>Diabetes Prediction API</strong><br/>
+        Flask API serving real-time ML predictions trained on health datasets using Random Forest.
+      </li>
+      <li>
+        <strong>Portfolio Website</strong><br/>
+        Static website with a dynamic CV-like layout (HTML/CSS/JS, dark mode, resume download).
+      </li>
+    </ul>
+  </section>
+
+  <section id="skills" class="about container">
+    <h2>Skills</h2>
+    <ul>
+      <li><i class="fas fa-code"></i> Programming: Python, C++, SQL, R</li>
+      <li><i class="fas fa-brain"></i> Machine Learning: CNNs, Vision Transformers, Reinforcement Learning, Bayesian Optimization</li>
+      <li><i class="fas fa-database"></i> Databases: MySQL, PostgreSQL</li>
+      <li><i class="fas fa-cloud"></i> DevOps & Cloud: AWS, Docker, RabbitMQ, Redis</li>
+      <li><i class="fas fa-terminal"></i> Tools: HPC, Nginx, Celery, Postman, Git, Linux</li>
     </ul>
   </section>
 
